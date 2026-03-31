@@ -8,7 +8,7 @@ appel à la
 [transformation bilinéaire](https://github.com/jeanluccollette/transformee-bilineaire)
 pour transposer le gabarit du filtre numérique en celui d'un filtre analogique.
 
-On accède alors aux coefficients de la fonction de transfert qui est une fraction rationnelle.
+On accède alors aux coefficients de la fonction de transfert du filtre qui est une fraction rationnelle.
 
 $$H(z)=\dfrac{\sum_{m=0}^{M}b_mz^{-m}}{1+\sum_{k=1}^{K}a_kz^{-k}}=\dfrac{Y(z)}{X(z)}$$
 
