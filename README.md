@@ -29,7 +29,7 @@ un signal "chirp" dont la fréquence évolue linéairement au cours du temps ent
 
 ## Filtre RIF (réponse impulsionnelle finie)
 
-$$H(z)=\sum_{m=0}^{M}b_mz^{-m}}=\dfrac{Y(z)}{X(z)}$$
+$$H(z)=\sum_{m=0}^{M}b_mz^{-m}=\dfrac{Y(z)}{X(z)}$$
 
 ![](data/rif_gain_db.png)
 
