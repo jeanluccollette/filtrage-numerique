@@ -22,6 +22,9 @@ d'échantillonnage $f_e$ pour accéder à une fréquence exprimée en Hertz.
 
 ![](data/rii_phase.png)
 
+Le programme [rii_test.py](code/rii_test.py) permet ensuite de tester le filtre avec
+un signal "chirp" dont la fréquence évolue linéairement au cours du temps entre $0$ et $\dfrac{f_e}{2}$.
+
 ![](data/rii_chirp.png)
 
 ## Filtre RIF (réponse impulsionnelle finie)
