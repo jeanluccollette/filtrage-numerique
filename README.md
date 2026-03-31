@@ -29,14 +29,21 @@ un signal "chirp" dont la fréquence évolue linéairement au cours du temps ent
 
 ## Filtre RIF (réponse impulsionnelle finie)
 
-Les filtres à réponse impulsionnelle finie ont une fonction de transfert de la forme ci-dessous.
+Les filtres à réponse impulsionnelle finie ont une fonction de transfert qui prend la forme ci-dessous.
 
 $$H(z)=\sum_{m=0}^{M}b_mz^{-m}=\dfrac{Y(z)}{X(z)}$$
+
+Le programme [rif.py](code/rif.py) donne un exemple de synthèse, avec une réponse en fréquence
+donnée en fréquence réduite. On peut multiplier ensuite cette fréquence réduite par la fréquence
+d'échantillonnage $f_e$ pour accéder à une fréquence exprimée en Hertz.
 
 ![](data/rif_gain_db.png)
 
 ![](data/rif_gain_lin.png)
 
 ![](data/rif_phase.png)
+
+Le programme [rif_test.py](code/rif_test.py) permet ensuite de tester le filtre avec
+un signal "chirp" dont la fréquence évolue linéairement au cours du temps entre $0$ et $\dfrac{f_e}{2}$.
 
 ![](data/rif_chirp.png)
