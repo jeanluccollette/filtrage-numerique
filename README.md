@@ -2,6 +2,10 @@
 
 ## Filtre RII (réponse impulsionnelle infinie)
 
+Les méthodes de synthèse de filtre numérique à réponse impulsionnelle infinie s'inspire
+directement de celles appliquées pour les filtres analogiques.
+[transformation bilinéaire](https://github.com/jeanluccollette/transformee-bilineaire)
+
 ![](data/rii_gain_db.png)
 
 ![](data/rii_gain_lin.png)
