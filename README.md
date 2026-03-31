@@ -11,3 +11,11 @@
 ![](data/rii_chirp.png)
 
 ## Filtre RIF (réponse impulsionnelle finie)
+
+![](data/rif_gain_db.png)
+
+![](data/rif_gain_lin.png)
+
+![](data/rif_phase.png)
+
+![](data/rif_chirp.png)
