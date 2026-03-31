@@ -12,6 +12,10 @@ On accède alors aux coefficients de la fonction de transfert du filtre qui est 
 
 $$H(z)=\dfrac{\sum_{m=0}^{M}b_mz^{-m}}{1+\sum_{k=1}^{K}a_kz^{-k}}=\dfrac{Y(z)}{X(z)}$$
 
+Le programme [rii.py](code/rii.py) donne un exemple de synthèse, avec une réponse en fréquence
+donnée en fréquence réduite. On peut multiplier ensuite cette fréquence réduite par la fréquence
+d'échantillonnage $f_e$ pour accéder à une fréquence exprimée en Hertz.
+
 ![](data/rii_gain_db.png)
 
 ![](data/rii_gain_lin.png)
