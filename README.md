@@ -29,6 +29,8 @@ un signal "chirp" dont la fréquence évolue linéairement au cours du temps ent
 
 ## Filtre RIF (réponse impulsionnelle finie)
 
+Les filtres à réponse impulsionnelle finie ont une fonction de transfert de la forme ci-dessous.
+
 $$H(z)=\sum_{m=0}^{M}b_mz^{-m}=\dfrac{Y(z)}{X(z)}$$
 
 ![](data/rif_gain_db.png)
