@@ -11,16 +11,13 @@ from scipy import signal
 
 nuc1 = 0.2
 nuc2 = 0.25
-nuc = (nuc1+nuc2)/2
-N = 25
-Ncal = 10000
+N = 42
 fe = 1000.0
 T = 1/fe
 duree = 10.0
 fmin = 0.0
 fmax = 500.0
 
-# b = signal.firwin(N, nuc, window=('hanning'),nyq=0.5)
 b = signal.remez(N, [0, nuc1, nuc2, 0.5], [1, 0])
 
 NT = np.round(duree/T)

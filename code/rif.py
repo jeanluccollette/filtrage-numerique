@@ -11,11 +11,9 @@ from scipy import signal
 
 nuc1 = 0.2
 nuc2 = 0.25
-nuc = (nuc1+nuc2)/2
-N = 25
+N = 42
 Ncal = 10000
 
-# b = signal.firwin(N, nuc, window=('hanning'),nyq=0.5)
 b = signal.remez(N, [0, nuc1, nuc2, 0.5], [1, 0])
 w, h = signal.freqz(b, worN=Ncal)
 
@@ -30,7 +28,6 @@ gabarit_max[w > 2*np.pi*nuc2] = delta
 plt.figure()
 plt.title('Filtre numerique : gain')
 plt.plot(w/(2*np.pi), 20*np.log10(np.abs(h)), 'b')
-# plt.xlabel('Frequence reduite, nuc1='+str(nuc1)+', nuc2='+str(nuc2))
 plt.xlabel('Frequence reduite, nuc1={:.2f}, nuc2={:.2f}'.format(nuc1, nuc2))
 plt.ylabel('Gain (dB), delta={:.2f}'.format(20*np.log10(delta)), color='b')
 plt.grid()
