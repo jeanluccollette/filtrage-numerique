@@ -33,4 +33,6 @@ plt.plot(t, u, 'b')
 plt.plot(t, y, 'r')
 plt.xlabel('Temps(en s)')
 plt.ylabel('Amplitude')
+plt.savefig('rif_chirp.png')
+
 plt.show()

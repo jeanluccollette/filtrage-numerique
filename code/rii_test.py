@@ -38,4 +38,6 @@ plt.plot(t, u, 'b')
 plt.plot(t, y, 'r')
 plt.xlabel('Temps(en s)')
 plt.ylabel('Amplitude')
+plt.savefig('rii_chirp.png')
+
 plt.show()

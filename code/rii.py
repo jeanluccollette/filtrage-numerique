@@ -39,6 +39,7 @@ plt.grid()
 plt.axis('tight')
 plt.plot(w/(2*np.pi), 20*np.log10(gabarit_min), 'k--')
 plt.plot(w/(2*np.pi), 20*np.log10(gabarit_max), 'k--')
+plt.savefig('rii_gain_db.png')
 
 plt.figure()
 plt.title('Filtre numerique : gain')
@@ -49,6 +50,7 @@ plt.grid()
 plt.axis('tight')
 plt.plot(w/(2*np.pi), gabarit_min, 'k--')
 plt.plot(w/(2*np.pi), gabarit_max, 'k--')
+plt.savefig('rii_gain_lin.png')
 
 plt.figure()
 angles = np.unwrap(np.angle(h))
@@ -58,4 +60,7 @@ plt.xlabel('Frequence (Hz)')
 plt.ylabel('Phase (degre)', color='g')
 plt.grid()
 plt.axis('tight')
+plt.savefig('rii_phase.png')
+
 plt.show()
+
